@@ -9,6 +9,7 @@ import {
 import Home from './components/home/Home';
 import NotMatch from './components/notMatch/NotMatch';
 import PostDetails from './components/postDetails/PostDetails';
+import Comments from './components/comments/Comments';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         <Route path = "/post/:postId">
           <PostDetails/>
         </Route>
-
+        <Route path = "/post/:postId">
+          <Comments/>
+        </Route>
         <Route exact path = "/">
           <Home/>
         </Route>

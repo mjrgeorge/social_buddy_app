@@ -12,15 +12,16 @@ const Post = (props) => {
     const {id, title, body} = props.user;
     const history = useHistory();
     const handleButton = (postId)=>{
-        history.push(`/post/${postId}`);
+        const url = `/post/${postId}`;
+        history.push(url);
     }
     return (
         <Container fixed>
-            <Card style={{ backgroundColor: '#ff4d4d', margin: '20px'}}>
+            <Card style={{ backgroundColor: '#f6e58d', margin: '20px'}}>
                 <CardActionArea>
                     <CardContent>
                         <Typography gutterBottom variant="h4" component="div">
-                            {id}.{title}
+                            {id}. {title}
                         </Typography>
                         <Typography variant="body1" color="textSecondary" component="p">
                                 {body}
