@@ -11,7 +11,6 @@ const Home = () => {
     }, [])
     return (
         <div>
-            <h2>Total Loaded Users: {users.length}</h2>
             {
                 users.map(user =><Post user={user} key={user.id}></Post>)
             }

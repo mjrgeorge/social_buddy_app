@@ -17,7 +17,7 @@ const Post = (props) => {
     }
     return (
         <Container fixed>
-            <Card style={{ backgroundColor: '#f6e58d', margin: '20px'}}>
+            <Card style={{ backgroundColor: '#dff9fb', margin: '20px'}}>
                 <CardActionArea>
                     <CardContent>
                         <Typography gutterBottom variant="h4" component="div">
