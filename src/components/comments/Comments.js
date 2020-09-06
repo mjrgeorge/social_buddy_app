@@ -14,6 +14,9 @@ const Comments = () => {
             .then(data =>setComments(data))
             .catch(error => console.log(error))
         }, [])
+
+            // const url = `https://picsum.photos/200/300?random=${postId}`;
+
     return (
         <div>
             <PostDetails></PostDetails>
