@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import CommentsDetails from '../commentsDetails/CommentsDetails';
+import PostDetails from '../postDetails/PostDetails';
 
 
 const Comments = () => {
@@ -15,7 +16,7 @@ const Comments = () => {
         }, [])
     return (
         <div>
-            <h1>Comments Loaded: {comments.length}</h1>
+            <PostDetails></PostDetails>
             {
                 comments.map(comment =><CommentsDetails comment={comment} key = {comment.id}></CommentsDetails>)
             }
