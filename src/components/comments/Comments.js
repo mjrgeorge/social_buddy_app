@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import CommentsDetails from '../commentsDetails/CommentsDetails';
 import PostDetails from '../postDetails/PostDetails';
 
-
 const Comments = () => {
         const {postId} = useParams();
         const [comments, setComments] = useState([]);
@@ -14,9 +13,6 @@ const Comments = () => {
             .then(data =>setComments(data))
             .catch(error => console.log(error))
         }, [])
-
-            // const url = `https://picsum.photos/200/300?random=${postId}`;
-
     return (
         <div>
             <PostDetails></PostDetails>

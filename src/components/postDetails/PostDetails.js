@@ -18,7 +18,7 @@ const PostDetails = () => {
     const {id, title, body} = posts;
     return (
         <Container fixed>
-            <Card style={{ backgroundColor: '#95afc0', margin: '20px'}}>
+            <Card style={{ backgroundColor: '#dfe4ea', margin: '20px'}}>
                 <CardContent>
                     <Typography gutterBottom variant="h4" component="div">
                         {id}. {title}
