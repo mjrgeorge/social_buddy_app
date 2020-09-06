@@ -4,7 +4,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { useParams } from 'react-router-dom';
-import Comments from '../comments/Comments';
 
 const PostDetails = () => {
     const {postId} = useParams();
@@ -29,7 +28,6 @@ const PostDetails = () => {
                     </Typography>
                 </CardContent>
             </Card>
-            <Comments></Comments>
       </Container>
     );
 };

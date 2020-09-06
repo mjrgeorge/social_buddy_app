@@ -18,9 +18,9 @@ function App() {
         <Route path = "/home">
           <Home/>
         </Route>
-        <Route path = "/post/:postId">
+        {/* <Route path = "/post/:postId">
           <PostDetails/>
-        </Route>
+        </Route> */}
         <Route path = "/post/:postId">
           <Comments/>
         </Route>
